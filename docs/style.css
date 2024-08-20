@@ -22,11 +22,6 @@ body, html {
     border-radius: 10px;
 }
 
-.reveal-button-wrapper {
-    position: absolute; /* Absolute positioning for the button */
-    z-index: 2; /* Ensure it is on top of the info box */
-}
-
 .fancy-button {
     padding: 10px 30px;
     font-size: 1.5em;
