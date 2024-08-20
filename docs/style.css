@@ -1,0 +1,89 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('figs/background.png') no-repeat center center fixed;
+    background-size: 100% 100%; /* Adjust background size to cover the viewport */
+}
+
+.container {
+    position: relative; /* Allows for absolute positioning of child elements */
+    max-width: 600px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.reveal-button-wrapper {
+    position: absolute; /* Absolute positioning for the button */
+    top: 50%;
+    left: 50%;
+    transform: translate(130%, 280%); /* Center it horizontally and vertically */
+    z-index: 2; /* Ensure it is on top of the info box */
+}
+
+.fancy-button {
+    padding: 10px 30px;
+    font-size: 1.5em;
+    color: #fff;
+    background: linear-gradient(45deg, #007BFF, #00d4ff);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.fancy-button.red {
+    background: linear-gradient(45deg, #FF4C4C, #FF6D6D);
+    box-shadow: 0 6px 30px rgba(255, 76, 76, 0.6);
+}
+
+.fancy-button:hover {
+    box-shadow: 0 6px 30px rgba(0, 123, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.info-box {
+    position: absolute; /* Absolute positioning for overlay effect */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it horizontally and vertically */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1; /* Ensure it is below the button */
+    width: 600px;
+}
+
+.info-box.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #FF4C4C;
+}
