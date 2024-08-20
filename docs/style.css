@@ -24,7 +24,6 @@ body, html {
 
 .reveal-button-wrapper {
     position: absolute; /* Absolute positioning for the button */
-    top: -350%;
     z-index: 2; /* Ensure it is on top of the info box */
 }
 
@@ -38,6 +37,9 @@ body, html {
     cursor: pointer;
     transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+    position: fixed; /* Fixed positioning */
+    top: 30px; /* Distance from the bottom */
+    left: 30px;
 }
 
 .fancy-button.red {
@@ -63,7 +65,7 @@ body, html {
     transition: opacity 0.5s ease, visibility 0.5s ease;
     z-index: 1; /* Ensure it is below the button */
     width: 600px;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0px 60px rgba(0, 0, 0, 0.8);
 }
 
 .info-box.show {
