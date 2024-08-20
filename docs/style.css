@@ -6,7 +6,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background: url('figs/background.png') no-repeat center center fixed;
-    background-size: 100% 100%; /* Adjust background size to cover the viewport */
+    background-size: 1920px 1080px; /* Adjust background size to cover the viewport */
 }
 
 .container {
@@ -33,8 +33,8 @@ body, html {
     transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
     position: fixed; /* Fixed positioning */
-    top: 30px; /* Distance from the bottom */
-    left: 30px;
+    top: 65%; /* Distance from the bottom */
+    left: 57%;
 }
 
 .fancy-button.red {
