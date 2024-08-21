@@ -6,11 +6,10 @@ body, html {
     align-items: center;
     background: url('figs/background.png') no-repeat center center fixed;
     background-size: 100% 100%; /* Adjust background size to cover the viewport */
-    transform: scale(1);
     transform-origin: 0 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    
 }
 
 .container {
@@ -33,10 +32,10 @@ body, html {
 }
 
 .fancy-button {
-    padding: 10px 30px;
+    padding: 5px 25px;
     font-size: 1.5em;
     color: #fff;
-    background: linear-gradient(45deg, #007BFF, #00d4ff);
+    background: linear-gradient(45deg, #052f6d, #0457cc);
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -53,7 +52,7 @@ body, html {
 }
 
 .fancy-button:hover {
-    box-shadow: 0 6px 30px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 30px rgba(0, 123, 255, 0.8);
     transform: scale(1.05);
 }
 
@@ -69,8 +68,15 @@ body, html {
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     z-index: 1; /* Ensure it is below the button */
-    width: 600px;
+    width: 700px;
     box-shadow: 0 0px 60px rgba(0, 0, 0, 0.8);
+    max-height: 850px;
+    overflow-y: auto;
+}
+
+.info-box p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 .info-box.show {

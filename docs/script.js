@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.style.opacity = '0';
         button.style.visibility = 'hidden'; // Hide the button but keep it in the DOM
         infoBox.classList.add('show');
+        infoBox.scrollTop = 0; // Scroll the info box to the top
     });
 
     closeButton.addEventListener('click', function() {
