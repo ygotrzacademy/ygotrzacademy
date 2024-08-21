@@ -108,7 +108,7 @@ body {
 
 /* Custom scrollbars for WebKit browsers (Chrome, Safari, Edge) */
 body::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 4px; /* Width of the scrollbar */
 }
 
 body::-webkit-scrollbar-track {
@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Custom scrollbars for WebKit browsers (Chrome, Safari, Edge) */
 .info-box::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 4px; /* Width of the scrollbar */
 }
 
 .info-box::-webkit-scrollbar-track {
