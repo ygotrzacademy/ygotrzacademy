@@ -12,6 +12,11 @@ body, html {
     
 }
 
+body {
+    scrollbar-base-color: #f1f1f1; /* Track color */
+    scrollbar-face-color: #888; /* Handle color */
+}
+
 .container {
     position: relative; /* Allows for absolute positioning of child elements */
     max-width: 600px;
@@ -98,4 +103,47 @@ body, html {
 
 .close-button:hover {
     color: #FF4C4C;
+}
+
+
+/* Custom scrollbars for WebKit browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 6px; /* Rounded corners for the scrollbar handle */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+}
+
+/* Custom scrollbars for WebKit browsers (Chrome, Safari, Edge) */
+.info-box::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.info-box::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.info-box::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 6px; /* Rounded corners for the scrollbar handle */
+}
+
+.info-box::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+}
+
+/* Custom scrollbars for Firefox */
+.info-box {
+    scrollbar-width: auto; /* "auto" or "thin" */
+    scrollbar-color: #888 #f1f1f1; /* thumb and track color */
 }
